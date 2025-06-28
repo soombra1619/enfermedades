@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Presentación de Enfermedades</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0c1f2c;
+      color: #e0f7fa;
+    }
+    .slide {
+      display: none;
+      padding: 60px 40px;
+      min-height: 100vh;
+      text-align: center;
+    }
+    .slide:target {
+      display: block;
+    }
+    .slide img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      margin: 20px 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    }
+    .link-info {
+      display: inline-block;
+      margin-top: 10px;
+      font-weight: bold;
+      background-color: #004d40;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .link-info:hover {
+      background-color: #00796b;
+    }
+    h1, h2 {
+      color: #ffccbc;
+    }
+    ul {
+      text-align: left;
+      max-width: 600px;
+      margin: 30px auto;
+      list-style: disc;
+      color: #ffe0b2;
+    }
+    nav {
+      margin-top: 60px;
+      padding-bottom: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    nav a {
+      display: inline-block;
+      background-color: #00695c;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #004d40;
+    }
+    #slider1 { background-color: #102a43; }
+    #slider2 { background-color: #123c54; }
+    #slider3 { background-color: #4a148c; }
+    #slider4 { background-color: #ad1457; }
+    #slider5 { background-color: #1b5e20; }
+    #slider6 { background-color: #455a64; }
+    #slider7 { background-color: #263238; }
+    body:not(:has(:target)) #slider1 {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Slide 1: Anemia -->
+<section id="slider1" class="slide">
+  <h1>Anemia</h1>
+  <p>Condición en la que no hay suficientes glóbulos rojos sanos.</p>
+  <img src="https://www.comexperu.org.pe/upload/images/sem-1039---hechos-anemia-y-covid-210820-040254.jpg" alt="Anemia">
+  <img src="https://gomezalmaguer.com/wp-content/uploads/2023/04/1007031.jpg" alt="Anemia">
+  <br>
+  <a class="link-info" href="https://medlineplus.gov/spanish/anemia.html" target="_blank">Más sobre Anemia</a>
+  <ul>
+    <li><strong>Síntomas:</strong> Fatiga, mareos, piel pálida.</li>
+    <li><strong>Causas:</strong> Falta de hierro, B12 o pérdida de sangre.</li>
+    <li><strong>Prevención:</strong> Dieta rica en hierro, controles médicos.</li>
+    <li><strong>Tratamiento:</strong> Suplementos, transfusiones si es grave.</li>
+  </ul>
+  <nav>
+    <a href="#slider2">Siguiente</a>
+  </nav>
+</section>
+
+<!-- Slide 2: Gripe -->
+<section id="slider2" class="slide">
+  <h1>Gripe</h1>
+  <p>Enfermedad respiratoria contagiosa causada por el virus de la influenza.</p>
+  <img src="https://cuidateplus.marca.com/sites/default/files/styles/ratio_43/public/cms/gripe-resfriado.jpg.webp?itok=9xIap4h6" alt="Gripe">
+  <img src="https://www.fluimucil.es/sites/default/files/styles/blog_image_compression/public/post/images/gripe.jpg?itok=caPdNcDv" alt="Gripe">
+  <br>
+  <a class="link-info" href="https://www.who.int/es/news-room/fact-sheets/detail/influenza-(seasonal)" target="_blank">Más sobre Gripe</a>
+  <ul>
+    <li><strong>Síntomas:</strong> Fiebre, tos, fatiga.</li>
+    <li><strong>Causas:</strong> Infección por virus influenza.</li>
+    <li><strong>Prevención:</strong> Vacunación, higiene.</li>
+    <li><strong>Tratamiento:</strong> Reposo, antivirales.</li>
+  </ul>
+  <nav>
+    <a href="#slider1">Anterior</a>
+    <a href="#slider3">Siguiente</a>
+  </nav>
+</section>
+
+<!-- Slide 3: Diabetes tipo 2 -->
+<section id="slider3" class="slide">
+  <h1>Diabetes tipo 2</h1>
+  <p>Enfermedad crónica que afecta la forma en que el cuerpo usa el azúcar.</p>
+  <img src="https://sedep.com.ec/wp-content/uploads/2021/05/diabetes-tipo-2.jpg" alt="Diabetes">
+  <img src="https://www.fesemi.org/sites/default/files/images/informacion/info-pacientes/diabetes-adulto.jpg" alt="Diabetes">
+  <br>
+  <a class="link-info" href="https://www.cdc.gov/diabetes/spanish/index.html" target="_blank">Más sobre Diabetes tipo 2</a>
+  <ul>
+    <li><strong>Síntomas:</strong> Sed excesiva, fatiga, visión borrosa.</li>
+    <li><strong>Causas:</strong> Genética, mala alimentación, sedentarismo.</li>
+    <li><strong>Prevención:</strong> Dieta sana, ejercicio.</li>
+    <li><strong>Tratamiento:</strong> Medicamentos, insulina.</li>
+  </ul>
+  <nav>
+    <a href="#slider2">Anterior</a>
+    <a href="#slider4">Siguiente</a>
+  </nav>
+</section>
+
+<!-- Slide 4: Hipertensión -->
+<section id="slider4" class="slide">
+  <h1>Hipertensión</h1>
+  <p>Presión arterial alta. Suele no mostrar síntomas.</p>
+  <img src="https://www.mediquo.com/blog/wp-content/uploads/2019/05/mediquo_hipertensi%C3%B3n_post-1200x675.jpg" alt="Hipertensión">
+  <img src="https://cuidandotucorazon.com/wp-content/uploads/2023/04/shutterstock_1650521053-scaled.jpg" alt="Hipertensión">
+  <br>
+  <a class="link-info" href="https://www.who.int/es/news-room/fact-sheets/detail/hypertension" target="_blank">Más sobre Hipertensión</a>
+  <ul>
+    <li><strong>Síntomas:</strong> A menudo asintomática; dolor de cabeza.</li>
+    <li><strong>Causas:</strong> Estrés, obesidad, genética.</li>
+    <li><strong>Prevención:</strong> Control de peso, reducir sal.</li>
+    <li><strong>Tratamiento:</strong> Medicamentos, cambios de estilo de vida.</li>
+  </ul>
+  <nav>
+    <a href="#slider3">Anterior</a>
+    <a href="#slider5">Siguiente</a>
+  </nav>
+</section>
+
+<!-- Slide 5: Depresión -->
+<section id="slider5" class="slide">
+  <h1>Depresión</h1>
+  <p>Trastorno del estado de ánimo que afecta el bienestar emocional.</p>
+  <img src="https://www.gruporecoletas.com/noticias/wp-content/uploads/2020/01/sintomas-depresion-causas-tratamiento.jpg" alt="Depresión">
+  <img src="https://adipa.mx/content/uploads/2023/10/como-empieza-la-depresion.webp" alt="Depresión">
+  <br>
+  <a class="link-info" href="https://www.who.int/es/news-room/fact-sheets/detail/depression" target="_blank">Más sobre Depresión</a>
+  <ul>
+    <li><strong>Síntomas:</strong> Tristeza persistente, insomnio, fatiga.</li>
+    <li><strong>Causas:</strong> Genética, traumas, desequilibrio químico.</li>
+    <li><strong>Prevención:</strong> Apoyo emocional, autocuidado.</li>
+    <li><strong>Tratamiento:</strong> Psicoterapia, medicación.</li>
+  </ul>
+  <nav>
+    <a href="#slider4">Anterior</a>
+    <a href="#slider6">Siguiente</a>
+  </nav>
+</section>
+
+<!-- Slide 6: COVID-19 -->
+<section id="slider6" class="slide">
+  <h1>COVID-19</h1>
+  <p>Infección causada por el virus SARS-CoV-2. Altamente contagiosa.</p>
+  <img src="https://www.fda.gov/files/COVID%20testing%20policy%20drupal.jpg" alt="COVID-19">
+  <img src="https://www.bancomundial.org/content/dam/photos/780x439/2021/may-2/covid_vaccine_shutterstock.jpg" alt="COVID-19">
+  <br>
+  <a class="link-info" href="https://www.who.int/es/emergencies/diseases/novel-coronavirus-2019" target="_blank">Más sobre COVID-19</a>
+  <ul>
+    <li><strong>Síntomas:</strong> Fiebre, tos seca, pérdida del gusto.</li>
+    <li><strong>Causas:</strong> Contagio por gotas respiratorias.</li>
+    <li><strong>Prevención:</strong> Vacunas, higiene, mascarilla.</li>
+    <li><strong>Tratamiento:</strong> Aislamiento, antivirales, oxígeno.</li>
+  </ul>
+  <nav>
+    <a href="#slider5">Anterior</a>
+    <a href="#slider7">Siguiente</a>
+  </nav>
+</section>
+
+<!-- Slide 7: Asma -->
+<section id="slider7" class="slide">
+  <h1>Asma</h1>
+  <p>Enfermedad crónica que afecta las vías respiratorias provocando dificultad para respirar.</p>
+  <img src="https://www.bupasalud.com/sites/default/files/styles/640_x_400/public/articulos/2024-09/fotos/asma-infantil-1.jpg?itok=Z9gLpkcp" alt="Asma">
+  <img src="https://www.kin.es/wp-content/uploads/2019/12/manejo-odontologico-en-pacientes-con-asma.jpg" alt="Asma">
+  <br>
+  <a class="link-info" href="https://www.cdc.gov/asthma/spanish/default.htm" target="_blank">Más sobre Asma</a>
+  <ul>
+    <li><strong>Síntomas:</strong> Tos, sibilancias, opresión en el pecho, dificultad para respirar.</li>
+    <li><strong>Causas:</strong> Alergias, infecciones, ejercicio, aire frío.</li>
+    <li><strong>Prevención:</strong> Evitar desencadenantes, uso regular de inhaladores.</li>
+    <li><strong>Tratamiento:</strong> Broncodilatadores, corticosteroides inhalados.</li>
+  </ul>
+  <nav>
+    <a href="#slider6">Anterior</a>
+    <a href="#slider1">Volver al inicio</a>
+  </nav>
+</section>
+
+</body>
+</html>
